@@ -38,3 +38,24 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
            echo "Prueba"
+      - name: Mi ultimo step
+        run: echo "Mi ultimo paso"
+  
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Segundo Job
+        run: echo "Este es el segundo job"
+
+      - name: Lista de archivos
+        run: |
+          echo "Listando archivos"
+          echo "Mi directorio actual es:"
+          pwd
+          echo "Los archivos son:"
+          ls -la
+        
+
+      - name: Mi tercer step
+        run: echo "Este es el tercer paso"
+
